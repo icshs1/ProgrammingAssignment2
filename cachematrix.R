@@ -1,3 +1,6 @@
+## This is a source program for Assigement 2 of R-Programming, Coursera
+## It is progammed by Hyunsik Shim
+
 ## This is example using the following functions 
 ## a<-matrix(1:4,2,2) ## a1<-makeCacheMatrix(a) 
 ## cashSolve(a1)  
@@ -8,11 +11,11 @@
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
-    x <<- y
-    m <<- NULL
+    x <- y
+    m <- NULL
   }
   get <- function() x
-  set_inverse_matrix <- function(inverse_matrix) m <<- inverse_matrix
+  set_inverse_matrix <- function(inverse_matrix) m <- inverse_matrix
   get_inverse_matrix <- function() m
   list(set = set, get = get,
        set_inverse_matrix = set_inverse_matrix,
